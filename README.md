@@ -62,10 +62,13 @@ router.route("/").get((req, res) => {
 
 ## Conclusion
 
-- The time you spent on the case study
-  I started at 2pm on Tuesday and finished 6:10pm. Totally I spent around 4 hours on the case study.
-- What would you change in your submission to make it production ready?
+#### The time you spent on the case study
 
-- What would you do differently if you had more time?
-  I will make UI more effectively without any UI framework and will integrate authentication.
-  If possible, I will make model to see individual Movie details.
+I started at 2pm on Tuesday and finished 6:10pm. Totally I spent around 4 hours on the case study.
+
+#### What would you change in your submission to make it production ready?
+
+#### What would you do differently if you had more time?
+
+I will make UI more effectively without any UI framework and will integrate authentication.
+If possible, I will make model to see individual Movie details.
