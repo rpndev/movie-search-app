@@ -68,6 +68,8 @@ I started at 2pm on Wednesday and finished 6:10pm. Totally I spent around 4 hour
 
 #### What would you change in your submission to make it production ready?
 
+I would change package.json for config for production ready.
+
 #### What would you do differently if you had more time?
 
 I will make UI more effectively without any UI framework and will integrate authentication.
