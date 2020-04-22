@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 function Search(props) {
   const [searchVal, setSearchVal] = useState("");
   const [time, setTime] = useState(0);
+  const { whatever } = props;
   const onSetSearchVal = (e) => {
     setSearchVal(e.target.value);
   };
@@ -12,11 +13,11 @@ function Search(props) {
     setTime(
       setTimeout(() => {
         if (searchVal.length >= 3) {
-          props.search(searchVal);
+          whatever.search(searchVal);
         }
       }, 300)
     );
-  }, [searchVal]);
+  }, [searchVal, whatever]);
 
   return (
     <div>

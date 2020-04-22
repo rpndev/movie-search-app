@@ -11,12 +11,13 @@ router.route("/").get((req, res) => {
   fetch(`https://www.omdbapi.com/?apikey=${apikey}&s=${search}&page=${page}`)
     .then((response) => response.json())
     .then((response) => {
+      const searchJson = response;
       if (cache.get(search)) {
         res.send(cache.get(search));
       } else {
-        res.send(response);
+        res.send(searchJson);
       }
-      cache.put(search, response, 30000);
+      cache.put(search, searchJson, 30000);
     });
 });
 

@@ -37,9 +37,7 @@ const reducer = (state, action) => {
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
   useEffect(() => {
-    fetch(
-      `http://localhost:5000/api/search?apikey=4a3b711b&keyword=titanic&page=1`
-    )
+    fetch(`http://localhost:5000/api/search?apikey=4a3b711b&keyword=titanic`)
       .then((res) => res.json())
       .then((res) => {
         dispatch({
@@ -48,6 +46,7 @@ function App() {
         });
       });
   }, []);
+
   const search = (searchVal) => {
     dispatch({
       type: "SEARCH_LOADING",
