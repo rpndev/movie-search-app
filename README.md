@@ -64,7 +64,7 @@ router.route("/").get((req, res) => {
 
 #### The time you spent on the case study
 
-I started at 2pm on Tuesday and finished 6:10pm. Totally I spent around 4 hours on the case study.
+I started at 2pm on Wednesday and finished 6:10pm. Totally I spent around 4 hours on the case study.
 
 #### What would you change in your submission to make it production ready?
 
